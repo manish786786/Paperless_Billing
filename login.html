@@ -1,0 +1,40 @@
+<html>
+<head>
+<title> Admin login</title>
+</head>
+<body>
+<h1 <h1 align="center">S.GARMENTS</h1>
+<br><br><br><br><br>
+<h2>Admin Login</h2>
+<form>
+
+<script>
+function myFunction() {
+  var str1 = document.getElementById("a").value;
+    var str2 = document.getElementById("b").value;
+    
+	var n = str1.localeCompare("admin");
+	var m = str2.localeCompare("admin");
+
+	
+	
+	if(n==0 && m==0)
+	{
+	window.location.assign("index.html")
+	}
+	else
+	{
+	alert("Invalid Credential");
+	}
+}
+</script>
+
+Username:<input type='text' id='a' name='Username:'><br><br>
+
+Password:<input type='password' id='b' name='Password'><br><br>
+
+<button type="button" onclick="myFunction()">Login</button>
+
+  
+</body>
+</html>
